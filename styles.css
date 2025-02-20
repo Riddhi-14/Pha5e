@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #0f0f0f;
+  }
+  
+  /* Hero Section */
+  #hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+  
+  /* Title & Subtitle initial state */
+  #hero-title, #hero-subtitle, #hero-btn {
+    opacity: 0;
+  }
+  
+  /* Title */
+  #hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    transform: translateY(-50px);
+  }
+  
+  /* Subtitle */
+  #hero-subtitle {
+    font-size: 1.5rem;
+    transform: translateY(50px);
+  }
+  
+  /* Image Container */
+  .image-container {
+    margin-top: 30px;
+    gap: 20px;
+    position: relative;
+  }
+  
+  /* Hero Images */
+  .hero-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Start as grayscale and slightly desaturated vector-like */
+    filter: grayscale(100%) contrast(1.2);
+    transition: filter 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Additional vector effect for non-hovered images */
+  .image-container img.dimmed {
+    filter: grayscale(100%) contrast(1.2) brightness(0.8);
+    transform: scale(0.95);
+  }
+  
+  /* On Hover: Remove vector effect for the hovered image */
+  .hero-image.hovered {
+    filter: grayscale(0%) contrast(1) brightness(1);
+    transform: scale(1.1);
+  }
+  
+  /* Button Hover Effect */
+  #hero-btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #hero-btn:hover {
+    background-color: #fff;
+    color: #2a5298;
+    transform: scale(1.05);
+  }
+  

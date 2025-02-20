@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pha5e Hero Section Clone</title>
+  <!-- Bootstrap CSS (Optional for layout) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container hero-content text-center">
+      <h1 id="hero-title">Welcome to Pha5e</h1>
+      <p id="hero-subtitle">Experience smooth animations and interactive effects</p>
+      
+      <!-- Image Container -->
+      <div class="image-container d-flex justify-content-center mt-4">
+        <img src="images/image1.png" alt="Image 1" class="hero-image" data-index="0" />
+        <img src="images/image2.jpg" alt="Image 2" class="hero-image" data-index="1" />
+        <img src="images/image3.png" alt="Image 3" class="hero-image" data-index="2" />
+      </div>
+      
+      <!-- Call-to-Action Button -->
+      <a href="#explore" class="btn btn-primary mt-5" id="hero-btn">Explore More</a>
+    </div>
+  </section>
+  
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
